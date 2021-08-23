@@ -1,0 +1,39 @@
+:root{
+    /*
+    ============= backgournd color ========================
+    */
+    --bg1:#A5936E;
+    --bg2:#837047;
+    --bg3:#fef8d5;
+    --bg4:#537790;
+    --bg5:#E8EEF2;
+    --bg6:#D6D7D7;;
+    --white:#fff;
+
+
+
+
+    /*
+    ============= backgournd color ========================
+    */
+
+    --clr1:#c60c30;
+    --clr2:#333;
+    --clr3:#192070;
+    
+
+
+       /*
+    ============= backgournd color ========================
+    */
+    --fontSize11:11px;
+    --fontSize12:12px;
+    --fontSize13:13px;
+    --fontSize14:14px;
+    --fontSize15:15px;
+    --fontSize16:16px;
+    --fontSize17:17px;
+    --fontSize18:18px;
+    --fontSize20:20px;
+    --fontSize35:35px;
+}

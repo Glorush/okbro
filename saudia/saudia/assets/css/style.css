@@ -1,0 +1,939 @@
+
+/*
+===================================================================
+                      Start top Header 
+===================================================================
+*/
+
+/* top header */
+.topHeaderContent{
+	font-size:var(--fontSize14);
+	font-weight: normal;
+}
+
+.topHeaderContent a{
+	margin-left:10px;
+	position: relative;
+	text-decoration: underline;
+}
+.topHeaderContent a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 1px;
+    background-color: var(--clr2);
+    top: 50%;
+    transform: translatey(-50%);
+    right: -4px;
+}
+
+/*
+===================================================================
+                      end top Header
+===================================================================
+*/
+
+
+/*
+===================================================================
+                    start main header
+===================================================================
+*/
+.mainHeaderSection{
+    position: relative;
+    z-index: 999;
+}
+.mainHeaderInner{
+    max-width: 1020px;
+    width:100%;
+    margin: 0 auto;
+
+}
+.advisoryNot{
+    font-size:var(--fontSize11);
+    font-weight: normal;
+}
+
+.navbar {
+    padding:0px !important;
+}
+.navbar .nav-item a.nav-link {
+    text-transform: uppercase !important;
+    font-size: var(--fontSize14);
+    font-weight: 600;
+    color: var(--clr3);
+    padding: 20px 17px !important;
+    border-left:1px solid #D6D7D7;
+}
+.navbar .nav-item a.nav-link:hover {
+    background: #D6D7D7;
+    color: var(--clr3) !important;
+}
+
+
+/* mega menu */
+.mega-area{
+	position: static;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    border: 1px solid !important;
+    border-radius: 0px !important;
+    top: 60px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    border-color: rgba(232,232,232,1) !important;
+}
+.mega-menu {
+	position: absolute;
+	left: 0;
+	right: 0;
+	max-width: 1110px;
+	padding: 26px 10px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.mega-one{
+	padding:0 12px;
+	position: relative;
+}
+.dropdown-item i {
+	font-size: 11px;
+	margin-right: 6px;
+}
+.mega-one h5 {
+	margin-bottom: 15px !important;
+	font-size: 13px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.mega-menu .dropdown-item {
+    padding: 7px 0px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.section-title p{
+	margin-top:20px !important;
+}
+.menu-item-asia {
+	width: 300px;
+	top: 63px !important;
+}
+.menu-item-asia a{
+	font-size:14px;
+	font-weight: 300;
+}
+.customFlex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    width:100%;
+}
+/*
+===================================================================
+                    end main header
+===================================================================
+*/
+
+
+
+/*
+===================================================================
+                      Start Banner Area CSS
+===================================================================
+*/
+.home-slider-section {
+    width: 100%;
+    height: 695px;
+    margin-top:-93px;
+    position: relative;
+}
+.home-slider-section::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:170px;
+    background-image: url(../images/header-image-grad.png);
+}
+.home-slider-section .home-slick-slider img{
+	width:100%;
+	height:695px;
+	object-fit: cover;
+}
+.slick-dots {
+    bottom: 192px;
+    z-index: 99;
+}
+.slick-dots li button::before {
+	font-size: 43px !important;
+	color: var(--bg1)
+}
+.slick-dots li.slick-active button::before {
+	opacity: .75;
+	color:var(--bg1);
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+	color: #fff;
+	text-decoration: none;
+	background: var(--bg2);
+}
+.slick-dots li {
+	position: relative;
+	display: inline-block;
+	width: 13px;
+	padding: 0;
+	cursor: pointer;
+	margin: 0 5px;
+}
+.slick-dots li button::before {
+	font-size: 0 !important;
+	background: var(--bg1);
+	width: 13px;
+	height: 13px;
+    border-radius: 50%;
+}
+
+/*
+===================================================================
+                      End Banner Area CSS
+===================================================================
+*/
+
+
+
+/*
+===================================================================
+                      Start Tab Area CSS
+===================================================================
+*/
+.homePageBookingTabSection {
+    position: relative;
+    z-index: 999;
+    margin-top: -180px;
+}
+.bookingTabHeader{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bookingTabHeaderCol {
+    box-sizing: border-box;
+    height: 50px;
+    transition: all .15s ease;
+    cursor: pointer;
+}
+.bookingTabHeaderCol:hover{
+   height: 65px;
+   margin-top:-15px;
+
+}
+.icon {
+    width: 27px;
+    position: relative;
+    top: -11px;
+}
+.icon img {
+    width: 25px;
+    position: absolute;
+}
+.navText {
+    display: inline-block;
+    font-size: var(--fontSize15);
+    text-transform: uppercase;
+    color:var(--white);
+    padding: 12px;
+}
+.bookingTabHeaderCol ul {
+    display: flex;
+    align-items: center;
+    padding-right: 31px;
+}
+.shadowImg {
+    top: 2px;
+    right: 5px;
+}
+.activeTabNav{
+    position: relative;
+    background: #537790;
+    z-index: 99;
+    height: 65px;
+    margin-top:-15px;
+    position: relative;
+}
+.activeTabNav:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    background: url(../images/tabImages/tab-content-slider-wing-right.png);
+    z-index: 999;
+    width: 70px;
+    height: 100%;
+    background-repeat: no-repeat;
+    right: -70px;
+    bottom: -14px;
+}
+.activeTabNav:not(:first-child)::after {
+    content: "";
+    position: absolute;
+    background: url(../images/tabImages/tab-content-slider-wing-left.png);
+    z-index: 999;
+    width: 70px;
+    height: 100%;
+    background-repeat: no-repeat;
+    left: -68px;
+    bottom: -14px;
+}
+.activeTabNav .icon img{
+    width:35px;
+}
+.activeTabNav .icon {
+    width: 27px;
+    position: relative;
+    top: -14px;
+    left: -17px;
+}
+.activeTabNav .shadowImg {
+    top: -7px;
+    right: 7px;
+}
+.tabItem{
+    width:100%;
+    border:1px solid var(--bg4);
+    display: none;
+}
+.showTabBody{
+    display: block !important;
+}
+
+
+
+/* booking trip */
+.dateCol__calender {
+    padding: 2px 13px 2px 13px;
+    border-radius: 5px;
+}
+.dateCol__calender-day, .dateCol__calender-month{
+    font-size:var(--fontSize12);
+}
+
+.dateCol__calender-date{
+    font-size:var(--fontSize35);
+    font-weight: 200;
+}
+.whenGoingTextCol p{
+    font-size:var(--fontSize14);
+    font-weight: 400;
+    line-height: 20px;
+}
+.font__size-14{
+    font-size:var(--fontSize14);
+}
+.font__size-13{
+    font-size:var(--fontSize13);
+}
+.font__size-12{
+    font-size:var(--fontSize12);
+}
+.multiple__destination-text p{
+    font-weight: 300 !important;
+}
+.multiple__destination-text svg{
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+.sk-select-1 h3,
+.sk-select-2 h3,
+.sk-select-3 h3 {
+	font-size: 13px;
+	font-weight: 700;
+	color: #fff; 
+	margin-bottom: 0.3rem;
+}  
+.sk-input input {
+	width: 100%;
+	border: none;
+	padding: 0.3rem 2.7rem;
+	position: relative;
+	cursor: pointer;
+}
+.sk-select-1  { 
+	position: relative;
+}
+.sk-input::before {
+	content: '';
+	position: absolute;
+	width: 13%;
+	height: 59%;
+	top: 20px;
+	left: 2px;
+	background: url('../icon/Travelers_Symbol.png');
+	z-index: 9999;
+}
+.sk-input::after {
+	content: '';
+	position: absolute;
+	width: 10%;
+	height: 34%;
+	top: 28px;
+	right: 4px;
+	background: url('../icon/arrow.png');
+	z-index: 9999;
+}
+
+.sk-travelar-popup {
+	background: #fff;
+	margin-top: 0.1rem;
+	padding: 0.5rem;
+	display: none;
+}
+.sk-travelar-popup h2 {
+	font-size: 24px;
+	font-weight: 700;
+}
+.sk-travelar-popup ul li {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0.5rem;
+}
+.sk-travelar-popup ul {
+	padding-left: 0 !important;
+	padding: 20px 10px !important;
+}
+.sk-trvl-service span { 
+	font-size: 14px;
+	font-weight: 300 ;
+}
+.sk-min-span {
+	padding: 0 8px;
+	background: #537790;
+	border-radius: 50%; 
+	display: inline-block;
+	font-size: 14px;
+	cursor: pointer;
+	color: #fff;
+}
+.sk-plus-span {
+	padding: 0 6px;
+	background: #537790;
+	border-radius: 50%;
+	display: inline-block;
+	font-size: 14px;
+	cursor: pointer;
+	color: #fff;
+}
+.sk-select-2 select {
+	width: 60%;
+	border: none;
+	padding: 0.4rem 0.5rem;
+	font-size: 16px;
+}
+.sk-span-info {
+	margin-left: 8px;
+}
+.sk-select-3 input {
+	width: 90%;
+	border: none;
+	padding: 0.4rem 0.5rem;
+	font-size: 16px;
+}
+.sk-travels-btn {
+	display: flex;
+	justify-content: space-between;
+}
+.sk-right-btn input {
+	padding: 0.3rem 1rem;
+	border: none;
+	background: #A5936E;
+	color: #fff;
+	font-size: 14px;
+}
+.sk-left-btn a {
+	color: #fff;
+}
+.sk-left-btn a i { 
+	background: #456478;
+	padding: 0.5rem;
+	border-radius: 28px;
+	font-size: 12px;
+}
+
+
+/* Tab2 Manage Booking style */
+.sh-booking-left_content{
+	padding-right:0px;
+}
+.sh-booking-p{
+	max-width: 257px;
+	width: 100%;
+}
+.sh-chekc-btn .label-field input{
+	margin-right: 10px;
+}
+.booking-form {
+    margin-left: 50px;
+}
+.sh-flag-img {
+    max-width: 220px;
+    width: 100%;
+}
+.sh-flag-img input,
+.flight-info-way-form input,
+.sh-flights-info select{
+	padding: 4.5px 8px;
+    outline: 0;
+    border: 1px solid #C3D0D6;
+    background: #fff;
+    font-size: 12px;
+	height: 35px;
+	width: 82% !important;
+}
+.sh-flag-img input:focus,
+.flight-info-way-form input:focus{
+	color: #212529;
+	background-color: #fff;
+	border-color: #86b7fe;
+	box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+}
+.sh-flag-img i{
+	color: #fff;
+	padding-left: 10px;
+}
+.sh-flag-img.e-ticket input:first-child{
+	max-width: 40px;
+	width: 100%;
+}
+.sh-flag-img.e-ticket input.last-input{
+	width: 57% !important;
+}
+.check-closing-items{
+	margin-right: 10px;
+}
+.fs-14{
+	font-size: 14px;
+}
+.fs-3-0{
+	font-size: 3rem;
+}
+.sh-online-check i {
+    width: 20px;
+    height: 20px;
+    background: #A5936E;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 20px;
+    margin-right: 12px;
+    padding-left: 3px;
+}
+#online-check{
+	margin-right: 6px;
+}
+.flight-info input{
+	margin-right: 10px;
+}
+.flignt-info-form{
+	max-width: 250px;
+	width: 100%;
+	margin-right: 20px;
+}
+.flight-info-way {
+    margin-left: 45px;
+    justify-content: space-between;
+    padding: 5px 15px;
+    margin-bottom: 8px;
+    padding-top: 0;
+}
+.flight-info-way-form label{
+	width: 35px;
+	text-align: right;
+}
+.flign-info-date-time.d-flex {
+    margin-left: 20px;
+    max-width: 300px;
+    width: 100%;
+}
+.flign-info-date-time .dateCol__calender {
+	color: #000;
+}
+.dateCol__calender-date{
+	line-height: 35px;
+}
+.flight-info-select {
+    max-width: 180px;
+    margin-right: 39px;
+}
+.flign-info-date-time{
+	margin-top: 30px;
+}
+.sh-flg-flight {
+    max-width: 246px;
+    width: 100%;
+}
+
+.sh-flg-flight input{
+	width: 73% !important;
+}
+.sh-flg-flight span{
+	margin-right: 6px;
+}
+.sh-flights-info .u-booking-items {
+    max-width: 375px;
+    width: 100%;
+}
+
+/*
+===================================================================
+                      End Tab Area CSS
+===================================================================
+*/
+
+
+
+/*
+===================================================================
+                      Start Client logo Area CSS
+===================================================================
+*/
+
+.client-logo-area-section{
+	margin: 10px 0px;
+}
+.client-logo-area{
+	background: #CCD6DE;
+}
+.clint-wrapper{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.single-logo a{
+	display: block;
+	color: #5377A9;
+	text-decoration: underline;
+	text-transform: capitalize;
+	font-size: 14px;
+	padding: 0px 0px 10px 0px;
+}
+.single-logo{
+	margin: 20px 0px;
+	-webkit-box-flex:0;
+	    -ms-flex:0 0 14%;
+	        flex:0 0 14%;
+	border-right: 1px solid #537790;
+	text-align: center;
+}
+.single-logo:last-child{
+	border-right: none;
+}
+.single-logo a img{
+	width: 70px;
+	height: auto;
+}
+/*
+===================================================================
+                      End Client logo Area CSS
+===================================================================
+*/
+
+
+/*
+===================================================================
+                     Start Slider-Box-From Area CSS
+===================================================================
+*/
+.slider-box-from-area-section{
+	margin-bottom: 10px;
+}
+.single-slider-from img{
+	width: 100%;
+}
+.free-taka-from{
+	background: #9D7499;
+	padding: 5px 0px 0px 20px;
+	color: #fff;
+	border-bottom: 1px solid #CDC4DF;
+}
+.free-taka-from:last-child{
+	border-bottom: none;
+}
+.free-taka-from:hover{
+	background: #885F84;
+}
+.p-number p {
+	font-size: 35px;
+	font-weight: 600;
+	line-height: 40px;
+}
+.p-number p sup{
+	font-size: 20px;
+}
+.p-number span{
+	font-size: 12px;
+	padding-left: 10px;
+}
+.free-taka-from h4{
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.fares-icon{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.fares-icon p{
+	font-size: 14px;
+	padding-right: 10px;
+	font-weight: 300;
+}
+.fares-icon {
+	padding: 10px 0px 25px 0px;
+}
+.fares-icon a{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #CDC4DF;
+	text-align: center;
+	position: relative;
+}
+.fares-icon a i {
+	text-align: center;
+	color: #9D7499;
+	position: absolute;
+	text-align: center;
+	left: 6px;
+	top: 3px;
+}
+
+
+.owl-dots {
+	position: absolute;
+	bottom: 0;
+}
+.owl-theme .owl-dots .owl-dot span {
+	width: 15px;
+	height: 15px;
+	background: #A5936E;
+}
+
+.class-4{
+	padding-left: 0px;
+}
+
+/*
+===================================================================
+                    End Slider-Box-From Area CSS
+===================================================================
+*/
+ 
+
+
+
+/*
+===================================================================
+                      Start Find More Area CSS
+===================================================================
+*/
+.find-more-wrapper{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding-bottom: 30px;
+}
+.single-find-more{
+	-webkit-box-flex:0;
+	    -ms-flex:0 0 32.7%;
+	        flex:0 0 32.7%;
+	margin-right: 10px;
+	border:1px solid #D1D1D1;
+}
+.single-find-more:last-child{
+	margin-right: 0px;
+}
+.single-find-more img{
+	width: 100%;
+	height: auto;
+}
+.find-more-content h4{
+	color: #192070;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 20px 0px 15px 0px;
+}
+.find-more-btn{
+	text-align: center;
+}
+.find-more-btn{
+	padding-bottom: 30px;
+}
+.find-more-devider a i{
+	color: #A48E66;
+	font-size: 35px;
+	text-align: center;
+	
+}
+.find-more-devider{
+	padding-bottom: 30px;
+	position: relative;
+	text-align: center;
+}
+.find-more-devider:after {
+	content: "";
+	position: absolute;
+	background: #E4DDD1;
+	width: 46%;
+	height: 1px;
+	top: 25%;
+	right: 0px;
+}
+.find-more-devider:before {
+	content: "";
+	position: absolute;
+	background: #E4DDD1;
+	width: 46%;
+	height: 1px;
+	top: 25%;
+	left: 0px;
+}
+/*
+===================================================================
+                      End Find More Area CSS
+===================================================================
+*/
+
+
+
+
+/*
+===================================================================
+                      Start Footer Area CSS
+===================================================================
+*/
+.footer-area-section{
+	background: #A4A4A4;
+	padding: 20px 0px;
+}
+.footer-devider h3{
+	color: #fff;
+	font-weight: 600;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 10px 0px;
+	border-bottom: 1px solid #fff;
+}
+.footer-link{
+	padding-top: 10px;
+}
+.footer-link a{
+	color: #fff;
+	font-weight: 400;
+	font-size: 14px;
+	padding: 5px 20px 5px 0px;
+	display:block;
+}
+.get-touch-icon{
+	padding-top: 10px;
+}
+.get-touch-icon a{
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border-radius: 50%;
+	text-align: center;
+	display: inline-block;
+	margin-right: 10px;
+}
+.get-touch-icon a i {
+	color: #A4A4A4;
+	text-align: center;
+	line-height: 2;
+}
+.get-touch-icon a:hover i{
+	color: #00ACED;
+}
+.newslatter{
+	padding-top: 30px;
+}
+.newslatter p{
+	color: #fff;
+	font-weight: 400;
+	font-size: 14px;
+	padding-top: 20px;
+}
+.subscriber{
+	padding-top: 30px;
+}
+.subscriber button {
+	background: #A19168;
+	border: navajowhite;
+	text-transform: uppercase;
+	display: block;
+	padding: 5px 15px;
+	color: #fff;
+	font-size: 14px;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+.subscriber button:hover{
+	background: #82704A;
+	text-decoration: underline;
+}
+.soudia-app-img{
+	padding-top: 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.soudia-app-img a img {
+	width: 130px;
+	height: auto;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.footer-top{
+	padding-bottom: 30px;
+}
+.footer-bottom{
+	border-top: 1px solid #fff;
+	padding-top: 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.footer-bottom-left p{
+	color: #fff;
+	font-size: 14px;
+
+}
+
+/*
+===================================================================
+                      End Footer Area CSS
+===================================================================
+*/

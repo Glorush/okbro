@@ -1,0 +1,61 @@
+
+
+/* tab four responsive  */
+@media all and (max-width: 991px){
+	.booking-form{
+		margin-left: 0px !important;
+	}
+	.flight-info-way {
+		flex-direction: column;
+	}
+}
+
+
+@media all and (max-width: 767px){
+	.flight-info-first-form {
+		width: 300px;
+		text-align: center;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+	.booking-form{
+		margin-top: 25px;
+	}
+
+
+}
+
+@media all and (max-width: 575px){
+	.flignt-info-form {
+		margin: auto;
+	}
+	.flign-info-date-time{
+		margin: auto !important;
+	}
+	.sh-first-flight-form{
+		flex-direction: column;
+	}
+}
+
+
+@media all and (max-width: 479px){
+
+	.booking-form.sh-flights-info{
+		margin-left: 0;
+	}
+	.booking-input-items {
+		flex-direction: column;
+		column-gap: 32px;
+	}
+	.booking-input-items label {
+		text-align: left !important;
+		width: 100%;
+		margin-bottom: 10px !important;
+	}
+	.booking-input-items {
+		margin-left: 30px !important;
+	}
+	.check-online-text-content{
+		margin: 0px !important;
+	}
+}
